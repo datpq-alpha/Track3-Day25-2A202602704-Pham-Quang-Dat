@@ -26,14 +26,19 @@ class FullJitterBackoff:
         self.rng = rng or random.Random(0)
 
     def delay(self, retry_number: int, retry_after: float | None = None) -> float:
-        """TODO(student).
+        """Return a jittered delay, respecting the provider's minimum wait.
 
         * raise ValueError if retry_number < 1
         * with retry_after:    retry_after + rng.uniform(0, base_s)
         * without retry_after: rng.uniform(0, min(cap_s, base_s * 2 ** (retry_number - 1)))
         Use ``self.rng`` (seeded) — never the global ``random`` module.
         """
-        raise NotImplementedError("TODO(student): FullJitterBackoff.delay()")
+        if retry_number < 1:
+            raise ValueError("retry_number must be at least 1")
+        if retry_after is not None:
+            return retry_after + self.rng.uniform(0, self.base_s)
+        ceiling = min(self.cap_s, self.base_s * 2 ** (retry_number - 1))
+        return self.rng.uniform(0, ceiling)
 
 
 class RetryBudget:
@@ -45,8 +50,8 @@ class RetryBudget:
       still retry occasionally.
     * A retry is allowed only if one whole token is available; it consumes it.
 
-    With ratio=0.1 retries can never exceed ~10% of traffic, however bad the
-    incident — which is exactly what stops a retry storm.
+    With ratio=0.1, requests fund retries at 10% of traffic, in addition to
+    the initial burst allowance and the time-based refill.
     """
 
     def __init__(self, ratio: float = 0.1, min_per_s: float = 0.5, max_tokens: float = 20.0) -> None:
@@ -57,9 +62,23 @@ class RetryBudget:
         self._last: float | None = None  # virtual time of the previous call
 
     def record_request(self, now: float) -> None:
-        """TODO(student): refill by time elapsed since the previous call, then deposit ``ratio``."""
-        raise NotImplementedError("TODO(student): RetryBudget.record_request()")
+        """Refill by elapsed virtual time, then deposit ``ratio`` tokens."""
+        self._refill(now)
+        self.tokens = min(self.max_tokens, self.tokens + self.ratio)
 
     def try_acquire_retry(self, now: float) -> bool:
-        """TODO(student): refill by time elapsed; if tokens >= 1, take one and return True."""
-        raise NotImplementedError("TODO(student): RetryBudget.try_acquire_retry()")
+        """Refill by elapsed virtual time; consume one token if available."""
+        self._refill(now)
+        if self.tokens < 1:
+            return False
+        self.tokens -= 1
+        return True
+
+    def _refill(self, now: float) -> None:
+        """Account for elapsed time once, capped at the bucket capacity."""
+        if self._last is None:
+            self._last = now
+            return
+        elapsed = max(0.0, now - self._last)
+        self.tokens = min(self.max_tokens, self.tokens + elapsed * self.min_per_s)
+        self._last = max(self._last, now)

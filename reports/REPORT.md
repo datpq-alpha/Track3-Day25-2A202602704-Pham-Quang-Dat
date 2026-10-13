@@ -4,7 +4,7 @@
 
 **Repo:** [Track3-Day25-2A202602704-Pham-Quang-Dat](https://github.com/datpq-alpha/Track3-Day25-2A202602704-Pham-Quang-Dat)
 
-**Commit kiểm chứng:** `7a37bed`  **Điểm tự động:** **84/88**. Còn 4 điểm SLO ẩn và 12 điểm báo cáo do giảng viên chấm.
+**Commit nộp bài:** `41eba05`  **Điểm tự động:** **84/88**. Còn 4 điểm SLO ẩn và 12 điểm báo cáo do giảng viên chấm.
 
 Các bảng dùng simulator seed **25**, client seed **1**; kiểm chứng thêm trên seed **26, 27**. Các số thập phân giữ định dạng của JSON.
 

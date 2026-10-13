@@ -1,0 +1,63 @@
+SIM103 Return the negated condition directly
+  --> src\gameday_lab\sim\config.py:52:9
+   |
+50 |           if self.provider is not None and self.provider != spec.name:
+51 |               return False
+52 | /         if self.family is not None and self.family != spec.family:
+53 | |             return False
+54 | |         return True
+   | |___________________^
+help: Inline condition
+   |
+51 |             return False
+   -         if self.family is not None and self.family != spec.family:
+   -             return False
+   -         return True
+52 +         return not (self.family is not None and self.family != spec.family)
+53 |
+   |
+note: This is an unsafe fix and may change runtime behavior
+
+RUF046 Value being cast to `int` is already an integer
+  --> src\gameday_lab\slo\data.py:79:19
+   |
+77 |             prod *= rng.random()
+78 |         return k
+79 |     return max(0, int(round(rng.gauss(mu, math.sqrt(mu * (1 - p))))))
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: Remove unnecessary `int` call
+   |
+78 |         return k
+   -     return max(0, int(round(rng.gauss(mu, math.sqrt(mu * (1 - p))))))
+79 +     return max(0, round(rng.gauss(mu, math.sqrt(mu * (1 - p)))))
+80 |
+   |
+note: This is an unsafe fix and may change runtime behavior
+
+C408 Unnecessary `dict()` call (rewrite as a literal)
+  --> tests\test_breaker.py:9:35
+   |
+ 8 |   def make(**kw: object) -> SlidingWindowBreaker:
+ 9 |       defaults: dict[str, object] = dict(window_size=10, min_calls=5, failure_rate_threshold=0.5,
+   |  ___________________________________^
+10 | |                                        slow_call_s=5.0, slow_rate_threshold=0.6, open_duration_s=10.0,
+11 | |                                        half_open_max_probes=2, half_open_successes=2)
+   | |_____________________________________________________________________________________^
+12 |       defaults.update(kw)
+13 |       return SlidingWindowBreaker("alpha", **defaults)  # type: ignore[arg-type]
+   |
+help: Rewrite as a literal
+   |
+8  | def make(**kw: object) -> SlidingWindowBreaker:
+   -     defaults: dict[str, object] = dict(window_size=10, min_calls=5, failure_rate_threshold=0.5,
+   -                                        slow_call_s=5.0, slow_rate_threshold=0.6, open_duration_s=10.0,
+   -                                        half_open_max_probes=2, half_open_successes=2)
+9  +     defaults: dict[str, object] = {"window_size": 10, "min_calls": 5, "failure_rate_threshold": 0.5,
+10 +                                        "slow_call_s": 5.0, "slow_rate_threshold": 0.6, "open_duration_s": 10.0,
+11 +                                        "half_open_max_probes": 2, "half_open_successes": 2}
+12 |     defaults.update(kw)
+   |
+note: This is an unsafe fix and may change runtime behavior
+
+Found 3 errors.
+3 unsafe fixes available with `--fix --unsafe-fixes`.

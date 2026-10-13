@@ -1,0 +1,19 @@
+{
+  "source_commit": "7a37bed",
+  "pytest_passed": 104,
+  "automatic_score": 84,
+  "automatic_max": 88,
+  "seeds": [
+    25,
+    26,
+    27
+  ],
+  "artifact_sha256": {
+    "checks.json": "743d096f7f3f06499b42299028fb7c0d68214fa03316bdd18d957877bf735658",
+    "grade.log": "0b30da68b0a8a0889109fa34b26cbe5254385fadb26a66e5de56f97ad89fd6ba",
+    "pytest.log": "776bf8d90b0a079a947f5192434ef2661685d63e389ef19cee3239a0d7f4b091",
+    "repository.json": "a66f8b5d35297e78cfe1ec89b2ae4e68f55c2c3dbe100ec7e039c2ce5380ac3d",
+    "scoreboard.json": "72f3f8bc30d0de707d01806168bf61560c94c643bb61415fdd1cc2aff376e1c1"
+  },
+  "report_sha256": "b25dbee65099c7701175f3939a0f322b0a343c2258e1e691fa1d48da19d3b36a"
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "check": "pytest",
+    "exit_code": 0,
+    "command": [
+      "D:\\AI\\Day25\\.venv\\verification-001\\env\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider"
+    ],
+    "cwd": "D:\\AI\\Day25\\.venv\\verification-001\\checkout",
+    "log": "pytest.log"
+  },
+  {
+    "check": "ruff_full",
+    "exit_code": 1,
+    "command": [
+      "D:\\AI\\Day25\\.venv\\verification-001\\env\\Scripts\\python.exe",
+      "-m",
+      "ruff",
+      "check",
+      "src",
+      "tests",
+      "scripts"
+    ],
+    "cwd": "D:\\AI\\Day25\\.venv\\verification-001\\checkout",
+    "log": "ruff_full.log"
+  },
+  {
+    "check": "ruff_owned",
+    "exit_code": 0,
+    "command": [
+      "D:\\AI\\Day25\\.venv\\verification-001\\env\\Scripts\\python.exe",
+      "-m",
+      "ruff",
+      "check",
+      "src/gameday_lab/errors.py",
+      "src/gameday_lab/retry.py",
+      "src/gameday_lab/breaker.py",
+      "src/gameday_lab/client.py",
+      "src/gameday_lab/cache.py",
+      "src/gameday_lab/workflows/executor.py",
+      "src/gameday_lab/slo/alerting.py",
+      "scripts/run_cache_experiments.py",
+      "scripts/run_report_experiments.py",
+      "tests/test_client_routing.py",
+      "tests/test_cache_safety.py",
+      "tests/test_alerting_boundaries.py"
+    ],
+    "cwd": "D:\\AI\\Day25\\.venv\\verification-001\\checkout",
+    "log": "ruff_owned.log"
+  },
+  {
+    "check": "mypy_owned",
+    "exit_code": 0,
+    "command": [
+      "D:\\AI\\Day25\\.venv\\verification-001\\env\\Scripts\\python.exe",
+      "-m",
+      "mypy",
+      "src/gameday_lab/errors.py",
+      "src/gameday_lab/retry.py",
+      "src/gameday_lab/breaker.py",
+      "src/gameday_lab/client.py",
+      "src/gameday_lab/cache.py",
+      "src/gameday_lab/workflows/executor.py",
+      "src/gameday_lab/slo/alerting.py"
+    ],
+    "cwd": "D:\\AI\\Day25\\.venv\\verification-001\\checkout",
+    "log": "mypy_owned.log"
+  },
+  {
+    "check": "grade",
+    "exit_code": 0,
+    "command": [
+      "D:\\AI\\Day25\\.venv\\verification-001\\env\\Scripts\\python.exe",
+      "scripts/grade.py",
+      "--seeds",
+      "25,26,27",
+      "--out",
+      "D:\\AI\\Day25\\reports\\verification_runs\\run_001\\scoreboard.json"
+    ],
+    "cwd": "D:\\AI\\Day25\\.venv\\verification-001\\checkout",
+    "log": "grade.log"
+  }
+]

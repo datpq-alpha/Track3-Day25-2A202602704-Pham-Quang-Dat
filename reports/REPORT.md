@@ -1,12 +1,12 @@
 # Lab 25B — Report
 
-**Họ tên / nhóm:** [Tự điền]  **MSV:** [Tự điền]
+**Họ tên:** Phạm Quang Đạt  **MSSV:** 2A202602704
 
-**Commit:** `f5ddeb7` (mốc mã nguồn A–E/G đã hoàn thiện; báo cáo và kiểm tra được commit tiếp sau).
+**Repo:** [Track3-Day25-2A202602704-Pham-Quang-Dat](https://github.com/datpq-alpha/Track3-Day25-2A202602704-Pham-Quang-Dat)
 
-**Điểm tự động:** **84 / 88** trên dữ liệu public. Còn 4 điểm SLO ẩn do giảng viên chấm; 12 điểm báo cáo chưa được chấm tay. Không suy ra 100 điểm từ kết quả local.
+**Commit kiểm chứng:** `7a37bed`  **Điểm tự động:** **84/88**. Còn 4 điểm SLO ẩn và 12 điểm báo cáo do giảng viên chấm.
 
-Các bảng chính dùng simulator seed **25**, client seed **1**. Kết quả nhiều seed được ghi riêng, không trộn giữa các hàng. Mốc nguồn: `reports/gameday/`, `part_d_runs/run_001/`, `part_e_runs/run_001/`, `part_f_runs/run_001/`, `part_g_runs/run_001/`. Các giá trị thập phân trong bảng giữ dấu chấm như JSON để dễ đối chiếu.
+Các bảng dùng simulator seed **25**, client seed **1**; kiểm chứng thêm trên seed **26, 27**. Các số thập phân giữ định dạng của JSON.
 
 ## 1. Kết quả Game Day: naive và resilient
 
@@ -25,7 +25,7 @@ Các bảng chính dùng simulator seed **25**, client seed **1**. Kết quả n
 | G6 | naive | 0.5170 | 4.836 | 12.344 | 11.344 | 2.009 | 0 | Không |
 | G6 | resilient | 0.9996 | 5.982 | 1.058 | 0.022 | 2.208 | 0 | Có |
 
-Nguồn: `gameday/naive.json`, `gameday/resilient.json`; đối chứng F tái chạy resilient và khớp số trên. Resilient PASS cả 6 băng trên từng seed 25, 26, 27. Trong seed 25, retry-after violations, client-error retries, incompatible routes và unneeded failovers đều bằng 0. Primary share sau phục hồi ở G2/G4/G6 bằng 1.000. Dấu — ở G5 là không có mốc restore trong kịch bản, không phải recovery bằng 0.
+Nguồn: `gameday/naive.json`, `gameday/resilient.json`. Resilient PASS 6/6 băng trên cả ba seed. Seed 25 không có retry-after violation, retry lỗi request, incompatible route hay unneeded failover; primary share sau phục hồi ở G2/G4/G6 là 1.000. G5 không có mốc restore nên recovery để —.
 
 ## 2. Cấu hình client và lý do
 
@@ -44,7 +44,7 @@ Nguồn: `gameday/naive.json`, `gameday/resilient.json`; đối chứng F tái c
 | breaker.open_duration_s | 10 | Có khoảng nghỉ trước probe; G2/G4/G6 đạt primary share 1.000 sau phục hồi |
 | breaker.half_open_max_probes / half_open_successes | 2 / 2 | Giới hạn request đang bay khi phục hồi; đủ hai probe nhanh mới đóng, test đồng thời và stale generation đều pass |
 
-Các số là kết quả của cả cấu hình, không khẳng định từng tham số riêng lẻ gây ra toàn bộ thay đổi. Việc giảm timeout 8 → 6 đã có đối chứng riêng trong `PART_C.md`; các sensitivity test mới nằm trong mục 3.
+Đối chứng timeout 8 → 6 nằm trong `PART_C.md`; các thí nghiệm tiếp theo nằm ở mục 3.
 
 | Loại lỗi | Ghi breaker? | Retry cùng provider? | Failover/cooldown |
 |---|---|---|---|
@@ -53,11 +53,11 @@ Các số là kết quả của cả cấu hình, không khẳng định từng 
 | RATE_LIMITED | Không, trả permit | Chỉ nếu phải quay lại sau cooldown ngắn, còn budget/attempt/deadline | Cooldown dùng chung ít nhất `retry_after`; ưu tiên chuyển provider ngay |
 | OVERLOADED / SERVER_ERROR / TIMEOUT | Có | Khi breaker cho phép, còn attempt, token và deadline; chờ full jitter | Nếu không retry được thì chuyển provider ngay |
 
-Tool call chỉ đi provider hỗ trợ tool. Khi mọi provider không dùng ngay được, chỉ chờ rate-limit cooldown tối đa 5 giây, không chờ quota. Mọi kết quả gửi breaker kèm permit/generation; callback đến muộn không làm đảo trạng thái mới. Cache là bậc cuối sau khi inner client bỏ cuộc, xem mục 8.
+Tool call chỉ đi provider hỗ trợ tool. Khi không còn provider dùng ngay được, chỉ chờ rate-limit cooldown tối đa 5 giây nếu còn deadline. Permit/generation giúp bỏ qua kết quả đến muộn sau lần chuyển trạng thái.
 
 ## 3. Ba thí nghiệm về client
 
-Nguồn cố định: `part_f_runs/run_001/summary.csv`, settings/metric/timeseries từng thí nghiệm. Chỉ dùng seed 25 để so sánh các đối chứng tại mục này.
+Nguồn: `part_f_runs/run_001/summary.csv`, seed 25.
 
 ### 3.1. Retry budget là lớp phòng thủ cuối
 
@@ -74,7 +74,7 @@ Tất cả các hàng dưới đặt `max_attempts_per_provider = 5`. Nhánh bre
 | Hoạt động | Bật | G3 | 1.0000 | 1.034 | 0.020 | 0 | 4.754 |
 | Hoạt động | Tắt | G3 | 1.0000 | 1.034 | 0.020 | 0 | 4.754 |
 
-Khi breaker không mở, budget giảm retry cùng provider trên G2 từ 0.442 xuống 0.060 và recovery từ 42 xuống 0 giây; nhánh không budget có 64 lần GiveUp vì deadline. Khi breaker hoạt động đúng, hai nhánh budget cho số giống nhau trong thí nghiệm này vì breaker đã chặn tải xấu trước khi budget trở thành giới hạn. Vẫn cần cả hai: breaker bảo vệ từng provider dựa trên mẫu sức khỏe, còn budget chặn tổng lượng retry khi cửa sổ chưa đủ mẫu, ngưỡng bị cấu hình sai hoặc nhiều provider đồng thời lỗi. Các số này không chứng minh budget luôn cải thiện latency khi breaker đã hoạt động tốt.
+Khi breaker không mở, budget giảm retry ratio G2 từ 0.442 xuống 0.060 và recovery từ 42 xuống 0 giây; nhánh không budget có 64 GiveUp vì deadline. Khi breaker hoạt động đúng, bật/tắt budget cho cùng kết quả vì breaker đã chặn tải xấu trước khi budget trở thành giới hạn. Vẫn cần cả hai: breaker bảo vệ từng provider theo sức khỏe quan sát được, còn budget hạn chế retry khi chưa đủ mẫu hoặc breaker cấu hình sai.
 
 ### 3.2. Timeout 30 giây: xem availability trước p95
 
@@ -94,7 +94,7 @@ G4 là đối chứng chậm nhưng trả lời: tăng timeout hầu như không
 | Có lọc khả năng | 0.9996 | 0 | 0 |
 | Không lọc | 0.8948 | 251 | 251 |
 
-Model nhỏ trả lời nhanh và rẻ nhưng không thực hiện được bước chọn tool. Bỏ bộ lọc làm 251 lượt nhận output không thể dùng để hoàn tiền, availability giảm khoảng 10.48 điểm phần trăm. Đổi model chỉ hữu ích khi model đích đáp ứng tính năng của bước đang chạy; đây là điều kiện chức năng của sản phẩm, không chỉ là tối ưu chi phí. Client production giữ bộ lọc; biến thể sai chỉ tồn tại trong script thí nghiệm.
+Model nhỏ không hỗ trợ tool nên 251 lượt nhận output không dùng được cho bước hoàn tiền, availability giảm 10.48 điểm phần trăm. Vì vậy fallback phải đáp ứng tính năng của bước đang chạy; model trả lời được văn bản chưa chắc thực hiện được thao tác sản phẩm cần.
 
 ## 4. Workflow hoàn tiền
 
@@ -123,9 +123,9 @@ Nguồn: `slo.json`, mốc `part_e_runs/run_001/`. Dữ liệu có 43.200 phút;
 | night_spike | none | page sai | không page | — |
 | small_bump | none | page sai | không page | — |
 
-Naive: 7 page, 0 ticket, 3 false page. Burn-rate: 3 page, 1 ticket, 0 false page, đạt mọi thời hạn của dữ liệu public. Prefix sums cho truy vấn O(1); chỉ firing khi cả cửa sổ dài và ngắn đạt ngưỡng, mỗi episode phát một event thay vì một event/phút.
+Naive có 3 false page; burn-rate có 0 false page và đạt mọi thời hạn public. Prefix sums cho truy vấn O(1); chỉ firing khi cả cửa sổ dài và ngắn đạt ngưỡng, gom các phút liên tiếp thành một episode.
 
-Tổng request 25,901,755; bad 55,618; allowed bad 129,508.8. Availability 99.7853%; budget đã dùng **42.95%**, còn **57.05%**; **không freeze release** theo luật của bài. `small_bump` có 1,794 bad request, dùng khoảng 1.385% budget tháng; burn 1h cao nhất 8.225× (<14.4×), burn 6h cao nhất 1.911× (<6×) trong sự cố và 60 phút sau. Nó không đạt ngưỡng page dù 5-minute error ratio vượt 5%; việc tự hồi phục của một bump nhỏ không nên đánh thức on-call chỉ vì ngưỡng ngắn hạn cố định bị vượt.
+Tổng request 25,901,755; bad 55,618; allowed bad 129,508.8; availability 99.7853%. Budget đã dùng **42.95%**, còn **57.05%**: **không freeze release**. `small_bump` tiêu khoảng 1.385% budget tháng; burn 1h cao nhất 8.225× (<14.4×), burn 6h cao nhất 1.911× (<6×). Nó không đạt ngưỡng page dù tỷ lệ lỗi ngắn hạn vượt 5%, nên không cần đánh thức on-call cho bump tự hồi phục này.
 
 ## 6. Postmortem: G2 với client naive, blameless
 
@@ -133,9 +133,9 @@ Tổng request 25,901,755; bad 55,618; allowed bad 129,508.8. Availability 99.78
 
 **Tóm tắt (3 câu).** Tại t=120, alpha mất 75% năng lực trong 180 giây, làm hàng đợi tăng và request bắt đầu timeout. Retry ba tầng của v1 tiếp tục tạo tải lớn, còn request đã timeout vẫn chiếm công suất phía server. Provider hồi phục ở t=300 nhưng hệ thống chỉ đạt lại ngưỡng recovery ở t=455; client resilient giữ availability 100% trên cùng băng nhờ breaker, budget và fallback.
 
-**Ảnh hưởng.** Có **1,285/2,362 lượt user thất bại** (54.40%), p95 của lượt thành công 15.034 giây. Recovery cần thêm **155 giây** sau lúc provider phục hồi, tức 335 giây kể từ trigger. CSV ghi nhận call failure từ giây 142 đến 468; đây là khoảng có kết quả call lỗi, không phải khẳng định mọi user đều thất bại suốt khoảng đó. Với giả định riêng cho postmortem là 4 lượt/s đều trong 30 ngày và SLO 99.5%, tháng có 10,368,000 lượt, budget 51,840 lượt xấu; riêng 1,285 lượt mất ở G2 tiêu **2.479%** budget tháng. Nếu tháng chỉ có sự cố này thì còn 97.521%; không trộn giả định này với budget của dataset SLI ở mục 5.
+**Ảnh hưởng.** **1,285/2,362 lượt user thất bại** (54.40%); p95 lượt thành công 15.034 giây. Recovery cần thêm **155 giây** sau khi provider phục hồi, tức 335 giây kể từ trigger. CSV có call lỗi từ giây 142 đến 468. Giả sử 4 lượt/s đều trong 30 ngày và SLO 99.5%, budget tháng là 51,840 lượt xấu; G2 tiêu **2.479%**, còn 97.521% nếu tháng chỉ có sự cố này.
 
-**Timeline.** Khoảng `[start, end)` dùng giây ảo; attempts/s là trung bình trong khoảng; success ratio ở đây đo logical call hoàn tất, khác availability theo lượt user.
+**Timeline.** Khoảng `[start, end)` tính bằng giây ảo; attempts/s là trung bình, success ratio đo logical call hoàn tất.
 
 | Khoảng t | Sự kiện | Attempts alpha/s | Call tốt / hoàn tất | Call success |
 |---|---|---:|---:|---:|
@@ -148,11 +148,11 @@ Tổng request 25,901,755; bad 55,618; allowed bad 129,508.8. Availability 99.78
 | [455,485) | Cửa sổ 30 giây đầu đạt ≥95% call tốt | 10.87 | 352/368 | 95.65% |
 | [500,520) | Trở về gần tải nền | 9.00 | 186/186 | 100% |
 
-Nguồn phép tính: `part_f_runs/run_001/postmortem_G2.json`, CSV `gameday/naive_G2_overload_storm_timeseries.csv`. Việc call success còn 100% trong 20 giây đầu không phủ nhận sự cố: request đang xếp hàng chưa hoàn tất nên chưa nằm trong mẫu.
+Nguồn: `part_f_runs/run_001/postmortem_G2.json` và CSV `gameday/naive_G2_overload_storm_timeseries.csv`. Trong 20 giây đầu, request đang xếp hàng chưa nằm trong mẫu hoàn tất nên success ratio vẫn 100%.
 
-**Trigger và root cause.** Trigger là alpha mất 75% công suất. Root cause phía client là retry app × gateway × SDK tối đa 36 attempt/call, delay cố định, không budget/breaker/fallback. Timeout không hủy công việc server; retry tạo request mới trong khi request cũ vẫn chạy, backlog làm latency tăng, latency lại gây thêm timeout và retry. Vòng lặp này duy trì tải quá mức sau khi GPU đã trở lại: đây là metastable failure, không phải provider vẫn thiếu GPU ở t=400.
+**Trigger và root cause.** Trigger là alpha mất 75% công suất. Root cause phía client là retry app × gateway × SDK tối đa 36 attempt/call, delay cố định, không budget/breaker/fallback. Timeout không hủy công việc server: request cũ vẫn chạy trong khi retry tạo tải mới, backlog tăng latency, latency gây thêm timeout và retry. Vòng lặp tự duy trì sau khi GPU trở lại gây metastable failure.
 
-**Điều giúp và điều làm tệ hơn.** Các giới hạn cuối cùng về attempt/deadline giúp vòng lặp kết thúc khi tải cũ cạn đi, nhưng trước đó retry khuếch đại thành 34,475 attempt cho 3,481 logical call và 28,381 vi phạm retry-after. Resilient giới hạn retry, ngừng gửi vào provider yếu và chuyển sang vùng/provider khác; amplification còn 1.046 và cost/good turn giảm từ 4.627 xuống 2.133. Đây là vấn đề thiết kế tương tác giữa nhiều lớp, không quy trách nhiệm cho một cá nhân on-call.
+**Điều giúp và điều làm tệ hơn.** Giới hạn attempt/deadline cuối cùng giúp tải cũ cạn đi, nhưng retry đã tạo 34,475 attempt cho 3,481 logical call và 28,381 vi phạm retry-after. Resilient dùng budget/breaker/fallback để giảm amplification xuống 1.046, cost/good turn từ 4.627 xuống 2.133. Nguyên nhân nằm ở thiết kế tương tác giữa các lớp retry.
 
 | # | Action item | Loại | Owner theo vai trò | Cách kiểm chứng |
 |---|---|---|---|---|
@@ -161,17 +161,13 @@ Nguồn phép tính: `part_f_runs/run_001/postmortem_G2.json`, CSV `gameday/naiv
 | 3 | Theo dõi attempt/logical-call, provider timeout, trạng thái breaker và burn-rate | detect | Nhóm SRE | Không false page trên blip; mọi labelled page/ticket đúng thời hạn |
 | 4 | Kiểm thử crash sau payment/email trước khi rollout | prevent | Nhóm workflow/QA | 500 workflow/seed, duplicate/lost effect =0, completion ≥99% |
 
-Owner được ghi theo vai trò, chưa gán thông tin cá nhân. Các action về mã đã có trong bài; phần đưa vào CI/monitoring production là đề xuất tiếp theo, không tuyên bố đã triển khai ra hệ thống thật.
-
 ## 7. Điểm yếu còn lại
 
-G2 vẫn có tail latency: seed 26 p95 **10.626 giây**, dù availability 100% và mọi check G2 PASS. Fallback sang beta cũng đắt hơn mỗi call (1.4 so với 1.0 của alpha); G6 cost/good turn 2.208. Có thể tiếp tục thử ngưỡng slow-call, admission control và định tuyến theo tải quan sát được để giảm tail/cost, nhưng phải đo nhiều seed và giữ yêu cầu tương thích tool/deadline. Không chọn cấu hình max-attempts 5 chỉ vì G2 seed 25 của một thí nghiệm đẹp hơn; cần kiểm chứng toàn bộ băng trước khi đổi cấu hình cuối.
-
-Nếu mọi provider sập lâu hơn stale window, câu mới và câu cá nhân vẫn không trả lời được. Cần luồng báo trạng thái/chuyển người xử lý hoặc xử lý bất đồng bộ phù hợp; cache không thay thế khả năng truy vấn dữ liệu cá nhân còn đúng.
+G2 seed 26 vẫn có p95 **10.626 giây** dù availability 100%. Fallback sang beta cũng đắt hơn mỗi call (1.4 so với 1.0 của alpha); G6 cost/good turn là 2.208. Hướng cải thiện là thử admission control, ngưỡng slow-call và định tuyến theo tải, kiểm chứng nhiều seed trước khi đổi cấu hình. Khi mọi provider sập lâu hơn stale window, cần luồng chuyển người xử lý hoặc xử lý bất đồng bộ cho câu mới/cá nhân.
 
 ## 8. Cache: Part G
 
-Nguồn chốt: `part_g_runs/run_001/`, không ghi đè bởi các lượt chạy mới. Kết quả thường nằm thêm ở `reports/cache/`.
+Nguồn: `part_g_runs/run_001/`.
 
 | Client | Availability | FAQ availability | Cache hit | Stale served | Wrong | Outdated | Cost/good turn | PASS C1 |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
@@ -187,26 +183,14 @@ Nguồn chốt: `part_g_runs/run_001/`, không ghi đè bởi các lượt chạ
 
 ### 8.1. Thí nghiệm ngưỡng
 
-Giữ TTL 30, stale 300. Với ngưỡng 0.80/0.90/0.97, hit ratio lần lượt **0.610/0.592/0.499**, wrong **181/0/0**, cost/good turn **1.016/0.955/1.018**. Ngưỡng thấp nhận cả câu khác ý; ngưỡng quá cao bỏ lỡ paraphrase đúng. Diagnostic ở `part_f_runs/run_001/cache_threshold_080_diagnostic/` ghi lại từng hit sai và khớp tổng 181 của simulator: refund_policy ↔ refund_time **77**, phí ship nội thành ↔ đi tỉnh **81**, payment_methods ↔ COD **13**, đổi size ↔ đổi màu **10**. Đây là số quan sát thực, không chỉ suy đoán từ độ gần embedding.
+Giữ TTL 30, stale 300. Ngưỡng 0.80/0.90/0.97 cho hit ratio **0.610/0.592/0.499**, wrong **181/0/0**, cost/good turn **1.016/0.955/1.018**. Ngưỡng thấp nhận câu khác ý; ngưỡng quá cao bỏ lỡ paraphrase. Trace ở `part_f_runs/run_001/cache_threshold_080_diagnostic/` ghi nhận các cặp trả nhầm: chính sách/thời gian hoàn tiền **77**, ship nội thành/đi tỉnh **81**, phương thức thanh toán/COD **13**, đổi size/màu **10**.
 
 ### 8.2. Thí nghiệm TTL
 
-Giữ threshold 0.90, stale 300. TTL 30/60/300 cho hit ratio **0.592/0.652/0.731**, outdated **2/3/95**, cost/good turn **0.955/0.915/0.863** ở seed 25. TTL 60 cũng PASS trên cả ba seed; chọn 30 vì ưu tiên độ tươi và vẫn có dư địa so với hit tối thiểu 50%, không khẳng định số outdated luôn đơn điệu theo TTL. Webhook chỉ xử lý thay đổi được thông báo; thay đổi phí ship im lặng ở t=480 không có callback, nên TTL phải buộc refresh khi provider khỏe.
+Giữ threshold 0.90, stale 300. TTL 30/60/300 cho hit ratio **0.592/0.652/0.731**, outdated **2/3/95**, cost/good turn **0.955/0.915/0.863**. TTL 60 cũng PASS; chọn 30 để ưu tiên độ tươi, vẫn vượt hit tối thiểu 50%. Webhook chỉ xử lý thay đổi được thông báo; phí ship đổi im lặng ở t=480 nên TTL phải buộc refresh khi provider khỏe.
 
 ### 8.3. Thí nghiệm stale-if-error
 
-Giữ threshold 0.90, TTL 30. Tắt stale làm FAQ availability **0.9645 → 0.8529**, hit **0.592 → 0.481**, stale served **192 → 0**; bật stale giúp vượt qua outage 120 giây. Entry chỉ stale sau TTL và chỉ serve sau khi inner client GiveUp; webhook và prompt scope vẫn có hiệu lực. Nếu tài liệu đổi im lặng trong outage, answer stale có thể cũ đến hết cửa sổ 330 giây tổng tuổi; đây là đánh đổi cần công khai với sản phẩm.
+Giữ threshold 0.90, TTL 30. Tắt stale làm FAQ availability **0.9645 → 0.8529**, hit **0.592 → 0.481**, stale served **192 → 0**. Stale giúp vượt outage 120 giây, chỉ serve sau khi inner client GiveUp; webhook và prompt scope vẫn có hiệu lực. Nếu nguồn đổi im lặng trong outage, answer có thể cũ đến hết tổng tuổi 330 giây.
 
-Seed 26/27: FAQ availability **0.9540/0.9627**, hit **0.591/0.591**, wrong **0/0**, outdated **4/7**; cả hai PASS. Không cache câu cá nhân dù tách user vì trạng thái đơn/tiền/điểm có thể thay đổi; tách user chỉ tránh lẫn người, không đảm bảo độ tươi. Dashboard availability có thể vẫn xanh nhờ cache, nên cần theo dõi provider error/timeout, breaker OPEN, tỷ lệ stale served và tuổi answer độc lập với tỷ lệ câu trả lời cuối thành công.
-
-## Tái chạy và thông tin cần tự điền
-
-Điền họ tên/nhóm và MSV ở đầu file. Tên repo/link nộp bài và việc push do chủ repo xác nhận sau khi bổ sung thông tin cá nhân; các lệnh dưới chỉ kiểm chứng local.
-
-```powershell
-python -m pytest -q -p no:cacheprovider
-python scripts/grade.py --seeds 25,26,27
-python scripts/run_report_experiments.py
-```
-
-Script thí nghiệm luôn tạo thư mục lượt mới và từ chối `--out` đã tồn tại. Không chạy `make clean` sau khi chuẩn bị artifacts vì nó xóa hình/CSV/kết quả. Mốc kiểm tra cuối và phạm vi điểm public được ghi trong `reports/VERIFICATION.md` ở bước 10.
+Seed 26/27 cũng PASS: FAQ availability **0.9540/0.9627**, hit **0.591/0.591**, wrong **0/0**, outdated **4/7**. Không cache câu cá nhân dù tách user vì trạng thái đơn/tiền/điểm có thể thay đổi; tách user không đảm bảo độ tươi. Khi cache che outage, cần theo dõi provider error/timeout, breaker OPEN, tỷ lệ stale served và tuổi answer độc lập với availability cuối.

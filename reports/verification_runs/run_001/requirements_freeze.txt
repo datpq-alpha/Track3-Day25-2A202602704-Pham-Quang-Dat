@@ -1,0 +1,16 @@
+ast_serialize==0.13.0
+colorama==0.4.6
+-e git+https://github.com/datpq-alpha/Track3-Day25-2A202602704-Pham-Quang-Dat.git@7a37bed2c2263bc4e0a801536375776af3fa16ff#egg=day25_gameday_lab&subdirectory=.venv\verification-001\checkout
+iniconfig==2.3.1
+librt==0.16.0
+mypy==2.4.0
+mypy_extensions==1.1.0
+packaging==26.3
+pathspec==1.1.1
+pluggy==1.6.0
+Pygments==2.21.0
+pytest==9.1.1
+PyYAML==6.0.3
+ruff==0.17.0
+types-PyYAML==6.0.12.20260906
+typing_extensions==4.16.0

@@ -1,0 +1,22 @@
+
+Unit tests
+  [A] tests/test_errors_retry.py     21/21 ->  12.0/12
+  [B] tests/test_breaker.py          13/13 ->  12.0/12
+  [C] tests/test_client.py           11/11 ->   6.0/6
+  [D] tests/test_executor.py          7/7  ->   4.0/4
+  [E] tests/test_alerting.py          7/7  ->   4.0/4
+  [G] tests/test_cache.py            17/17 ->   4.0/4
+Game day tapes (resilient client, seeds 25,26,27)
+  [C] G1_rate_limit_spike          PASS 
+  [C] G2_overload_storm            PASS 
+  [C] G3_brownout                  PASS 
+  [C] G4_slow_region               PASS 
+  [C] G5_bad_deploy_then_quota     PASS 
+  [C] G6_provider_outage           PASS 
+Workflows         [D] PASS
+SLO alerting      [E] public PASS | hidden None
+Cache tape (cached client, seeds 25,26,27)
+  [G] C1_faq_outage                PASS 
+
+Parts: {'A': 12.0, 'B': 12.0, 'C': 30.0, 'D': 12.0, 'E': 8.0, 'G': 10.0}
+AUTOMATIC SCORE: 84.0 / 88   (+ report & postmortem: /12)

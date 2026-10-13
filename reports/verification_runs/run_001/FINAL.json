@@ -1,0 +1,37 @@
+{
+  "verified_commit": "7a37bed2c2263bc4e0a801536375776af3fa16ff",
+  "pytest_passed": 104,
+  "grader_unit_tests_passed": 76,
+  "automatic_score": 84.0,
+  "automatic_max": 88,
+  "unavailable_hidden_slo_points": 4,
+  "manual_report_max": 12,
+  "manual_report_scored": false,
+  "public_gameday_seed_runs_passed": 18,
+  "public_cache_seed_runs_passed": 3,
+  "workflow_seeds_passed": 3,
+  "source_snapshot_sha256_passed": 60,
+  "owned_ruff": "pass",
+  "owned_mypy": "pass",
+  "full_ruff": {
+    "status": "baseline_fail",
+    "errors": 3,
+    "protected_files": [
+      "src/gameday_lab/sim/config.py",
+      "src/gameday_lab/slo/data.py",
+      "tests/test_breaker.py"
+    ]
+  },
+  "artifact_sha256": {
+    "checks.json": "581b2550bbf0596e907e129090514b66620164e64418b2213bb5dcd52e54adc7",
+    "environment.json": "acb40c9443888b507aa61e95526fc8ddc8779b6174fc9ce07364c51e97d2d2de",
+    "grade.log": "0b30da68b0a8a0889109fa34b26cbe5254385fadb26a66e5de56f97ad89fd6ba",
+    "integrity.json": "91517b0b86d7414d39b622c6e3e7fd99f4110da511fdfcbe481b34dcdc1cd749",
+    "mypy_owned.log": "050c52a2b0c61e8b681ef5c485e0bc03340b8d55148e0acef27d744c8be42033",
+    "pytest.log": "b97005f2c78051937dc8d63f3a350af5ba8718f91c244ea0996c28276e2183d4",
+    "requirements_freeze.txt": "f71b8de8991299d60b661132cf2928497f7aec2d487c838034fa55acad0268d2",
+    "ruff_full.log": "c32a9350bbb3e15f3532f1c536caf0f81d4cd7a7f85cba4628aba3cbebddeefc",
+    "ruff_owned.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "scoreboard.json": "72f3f8bc30d0de707d01806168bf61560c94c643bb61415fdd1cc2aff376e1c1"
+  }
+}

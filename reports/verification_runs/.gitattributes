@@ -1,0 +1,4 @@
+# Preserve the recorded verification evidence byte for byte.
+* -text whitespace=cr-at-eol
+# Keep console padding in raw logs; source files still use normal checks.
+*.log -whitespace

@@ -1,0 +1,44 @@
+{
+  "slo": 0.995,
+  "minutes": 43200,
+  "rules": [
+    {
+      "name": "fast_burn_2pct_1h",
+      "severity": "page",
+      "long_min": 60,
+      "short_min": 5,
+      "burn_rate": 14.4
+    },
+    {
+      "name": "slow_burn_5pct_6h",
+      "severity": "page",
+      "long_min": 360,
+      "short_min": 30,
+      "burn_rate": 6.0
+    },
+    {
+      "name": "budget_leak_10pct_3d",
+      "severity": "ticket",
+      "long_min": 4320,
+      "short_min": 360,
+      "burn_rate": 1.0
+    }
+  ],
+  "source_sha256": {
+    "src/gameday_lab/slo/alerting.py": "e56b27c6c88d983f19f0b905ddbdade18d820d6ba0c10b6d16ac16983a4ba69b",
+    "src/gameday_lab/slo/data.py": "eebd8e67fa4be6daa0478766298db91c9ad169b02533b8272d366075b8ab7ddf",
+    "src/gameday_lab/slo/scoring.py": "6b71ab749986434f820061ac05ef707434b826245f03b0268e87f781d692bbe2",
+    "scripts/run_slo.py": "0ed6cc264e7d4833968d4dddec8759f715d5da0b2dc298b8499c99044946ee0d"
+  },
+  "input_sha256": {
+    "data/sli_30d.csv": "cd1acd2e85272903fb7b4aec2d4d27ee952e83924c425560e3fec11205f88918",
+    "data/sli_30d_labels.json": "3d6c7703388cca4cea10b8ee0e382870be4c09e0616dbc999ca12b107a2f0d35"
+  },
+  "unit_tests_passed": 14,
+  "small_bump": {
+    "bad_requests": 1794,
+    "share_of_monthly_error_budget": 0.013852343209948503,
+    "max_1h_burn_during_and_60m_after": 8.22540331742785,
+    "max_6h_burn_during_and_60m_after": 1.9105492703391989
+  }
+}

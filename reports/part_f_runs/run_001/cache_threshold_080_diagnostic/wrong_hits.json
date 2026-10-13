@@ -1,0 +1,1450 @@
+[
+  {
+    "t": 5.338725351404982,
+    "requested": "Điều kiện để được hoàn tiền là gì?",
+    "cached_from": "Tiền hoàn về tài khoản trong bao lâu?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 7.1439791462238915,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 7.719765302385228,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Tiền hoàn về tài khoản trong bao lâu?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 10.747722246525377,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 21.491635009534892,
+    "requested": "Phí ship đi tỉnh bao nhiêu?",
+    "cached_from": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 21.547124196396123,
+    "requested": "Muốn đổi sang size khác thì làm sao?",
+    "cached_from": "Mình muốn đổi sang màu khác",
+    "requested_intent": "exchange_size",
+    "cached_intent": "exchange_color",
+    "stale": false
+  },
+  {
+    "t": 21.819277834526872,
+    "requested": "Shop có ship COD không?",
+    "cached_from": "Có thanh toán bằng thẻ được không?",
+    "requested_intent": "cod",
+    "cached_intent": "payment_methods",
+    "stale": false
+  },
+  {
+    "t": 26.85108171188291,
+    "requested": "Có giao hàng thu tiền (COD) không?",
+    "cached_from": "Có thanh toán bằng thẻ được không?",
+    "requested_intent": "cod",
+    "cached_intent": "payment_methods",
+    "stale": false
+  },
+  {
+    "t": 27.704003104612024,
+    "requested": "Muốn đổi sang size khác thì làm sao?",
+    "cached_from": "Mình muốn đổi sang màu khác",
+    "requested_intent": "exchange_size",
+    "cached_intent": "exchange_color",
+    "stale": false
+  },
+  {
+    "t": 28.7821519170142,
+    "requested": "Phí ship đi tỉnh bao nhiêu?",
+    "cached_from": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 40.84162175920046,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 41.56881984813213,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 43.25443419816164,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 47.61695608722686,
+    "requested": "Thanh toán qua ví điện tử được không?",
+    "cached_from": "Nhận hàng rồi mới trả tiền được không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 48.78530952719392,
+    "requested": "Muốn đổi sang size khác thì làm sao?",
+    "cached_from": "Mình muốn đổi sang màu khác",
+    "requested_intent": "exchange_size",
+    "cached_intent": "exchange_color",
+    "stale": false
+  },
+  {
+    "t": 54.80476484163971,
+    "requested": "Ship trong thành phố mất phí bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 57.47248455665039,
+    "requested": "Muốn đổi sang size khác thì làm sao?",
+    "cached_from": "Đổi màu sản phẩm được không?",
+    "requested_intent": "exchange_size",
+    "cached_intent": "exchange_color",
+    "stale": false
+  },
+  {
+    "t": 58.84065465013875,
+    "requested": "Muốn đổi sang size khác thì làm sao?",
+    "cached_from": "Đổi màu sản phẩm được không?",
+    "requested_intent": "exchange_size",
+    "cached_intent": "exchange_color",
+    "stale": false
+  },
+  {
+    "t": 61.414067542530425,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 63.3094150770051,
+    "requested": "Ship trong thành phố mất phí bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 63.930837255186425,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 64.14632786231566,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 67.27756259655462,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 70.38986796988176,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 72.84583213595673,
+    "requested": "Đổi size áo thế nào?",
+    "cached_from": "Đổi màu sản phẩm được không?",
+    "requested_intent": "exchange_size",
+    "cached_intent": "exchange_color",
+    "stale": false
+  },
+  {
+    "t": 76.54319484804229,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 80.7665017632983,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 85.05976806131822,
+    "requested": "Đổi size áo thế nào?",
+    "cached_from": "Đổi màu sản phẩm được không?",
+    "requested_intent": "exchange_size",
+    "cached_intent": "exchange_color",
+    "stale": false
+  },
+  {
+    "t": 102.00303753248693,
+    "requested": "Đổi màu sản phẩm được không?",
+    "cached_from": "Đổi size áo thế nào?",
+    "requested_intent": "exchange_color",
+    "cached_intent": "exchange_size",
+    "stale": false
+  },
+  {
+    "t": 128.5321008691681,
+    "requested": "Đổi màu sản phẩm được không?",
+    "cached_from": "Muốn đổi sang size khác thì làm sao?",
+    "requested_intent": "exchange_color",
+    "cached_intent": "exchange_size",
+    "stale": false
+  },
+  {
+    "t": 135.85369142514563,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Ship trong thành phố mất phí bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 150.78875631566754,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 152.25397583095327,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 152.70006970663508,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 155.7764981335194,
+    "requested": "Tiền hoàn về tài khoản trong bao lâu?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 156.05543495626011,
+    "requested": "Phí ship đi tỉnh bao nhiêu?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 159.78300823257436,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 160.4782847438003,
+    "requested": "Hoàn tiền mất mấy ngày?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 160.51897363323042,
+    "requested": "Tiền hoàn về tài khoản trong bao lâu?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 164.9162504486107,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 169.67697173535873,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 171.20465768458686,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 175.2219258452891,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 177.54700770522294,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 177.76640291151975,
+    "requested": "Tiền hoàn về tài khoản trong bao lâu?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 178.69924055376083,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 179.4464280236388,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 179.84784343791807,
+    "requested": "Tiền hoàn về tài khoản trong bao lâu?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 183.5320443708361,
+    "requested": "Ship trong thành phố mất phí bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 184.38762263245354,
+    "requested": "Ship trong thành phố mất phí bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 186.13663610308842,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 187.21781960023716,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 188.0093328065674,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 190.36893950166737,
+    "requested": "Tiền hoàn về tài khoản trong bao lâu?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 191.3929009669505,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 200.8459652033256,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 201.06053583692963,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 203.30062482927758,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 204.68069586891383,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 205.26916609362385,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 209.71300350256422,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 210.6137606835977,
+    "requested": "Tiền hoàn về tài khoản trong bao lâu?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 211.0766993964277,
+    "requested": "Hoàn tiền mất mấy ngày?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 212.8668595466638,
+    "requested": "Tiền hoàn về tài khoản trong bao lâu?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 215.61219270719405,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 216.1184632315044,
+    "requested": "Phí ship đi tỉnh bao nhiêu?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 216.5480501733368,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 218.5218108633333,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 223.14068994761874,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 227.6513906051327,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 228.41775439704844,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 232.31127817057478,
+    "requested": "Phí ship đi tỉnh bao nhiêu?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 235.5251376177132,
+    "requested": "Điều kiện để được hoàn tiền là gì?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 238.45713562806944,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 238.85821081409952,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 239.919522519842,
+    "requested": "Cho mình hỏi quy định hoàn tiền với",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 244.23583672515912,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": true
+  },
+  {
+    "t": 244.81432367472254,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": true
+  },
+  {
+    "t": 252.00943871950403,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 253.9607145587206,
+    "requested": "Điều kiện để được hoàn tiền là gì?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 261.9944916983721,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": true
+  },
+  {
+    "t": 266.4999624979881,
+    "requested": "Điều kiện để được hoàn tiền là gì?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 267.3240640117458,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 268.93785663144934,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": true
+  },
+  {
+    "t": 269.6362211468261,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": true
+  },
+  {
+    "t": 270.55760542142184,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 276.29058631752724,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 276.29630486443784,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 276.47668322789303,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": true
+  },
+  {
+    "t": 278.3573014672218,
+    "requested": "Cho mình hỏi quy định hoàn tiền với",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 278.51654572643184,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": true
+  },
+  {
+    "t": 285.7594342924835,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 291.00925447128725,
+    "requested": "Phí ship đi tỉnh bao nhiêu?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": true
+  },
+  {
+    "t": 292.1266439537762,
+    "requested": "Điều kiện để được hoàn tiền là gì?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 293.7399112301369,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 293.9125548320636,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": true
+  },
+  {
+    "t": 297.93859599049273,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 298.1926868215025,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 301.3100961557907,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 305.72984543987855,
+    "requested": "Cho mình hỏi quy định hoàn tiền với",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 310.139481226161,
+    "requested": "Cho mình hỏi quy định hoàn tiền với",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 326.00821800539075,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 326.0996154836111,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 336.1057071972552,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 340.51110909186457,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 343.3489024782681,
+    "requested": "Điều kiện để được hoàn tiền là gì?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 343.3887384160307,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 345.8467269603524,
+    "requested": "Điều kiện để được hoàn tiền là gì?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 349.024501187116,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": true
+  },
+  {
+    "t": 350.3554424079635,
+    "requested": "Cho mình hỏi quy định hoàn tiền với",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 357.086245126429,
+    "requested": "Cho mình hỏi quy định hoàn tiền với",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 359.1357887532301,
+    "requested": "Cho mình hỏi quy định hoàn tiền với",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 361.3527214305849,
+    "requested": "Điều kiện để được hoàn tiền là gì?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": true
+  },
+  {
+    "t": 372.0112718762987,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Tiền hoàn về tài khoản trong bao lâu?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 372.07266983409164,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Ship trong thành phố mất phí bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 372.42438419340937,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Tiền hoàn về tài khoản trong bao lâu?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 373.7025464276583,
+    "requested": "Điều kiện để được hoàn tiền là gì?",
+    "cached_from": "Tiền hoàn về tài khoản trong bao lâu?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 380.9693925314905,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Ship trong thành phố mất phí bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 383.34450832486004,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Ship trong thành phố mất phí bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 385.9885451573884,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Ship trong thành phố mất phí bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 396.0603376623916,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Ship trong thành phố mất phí bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 406.7811298016307,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 413.2905372248603,
+    "requested": "Phí ship đi tỉnh bao nhiêu?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 425.5520969923564,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 426.49285176628683,
+    "requested": "Hoàn tiền mất mấy ngày?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 426.75308158596306,
+    "requested": "Shop nhận những hình thức thanh toán nào?",
+    "cached_from": "Có giao hàng thu tiền (COD) không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 428.08734646723457,
+    "requested": "Đổi màu sản phẩm được không?",
+    "cached_from": "Mặc không vừa thì đổi size được không?",
+    "requested_intent": "exchange_color",
+    "cached_intent": "exchange_size",
+    "stale": false
+  },
+  {
+    "t": 432.22692304514527,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 433.5971724339196,
+    "requested": "Hoàn tiền mất mấy ngày?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 440.91746852750737,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 445.0405673806027,
+    "requested": "Bao lâu thì nhận được tiền hoàn?",
+    "cached_from": "Điều kiện để được hoàn tiền là gì?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 446.6599142375178,
+    "requested": "Shop nhận những hình thức thanh toán nào?",
+    "cached_from": "Có giao hàng thu tiền (COD) không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 448.8576285542379,
+    "requested": "Phí ship đi tỉnh bao nhiêu?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 450.4915310986124,
+    "requested": "Có thanh toán bằng thẻ được không?",
+    "cached_from": "Có giao hàng thu tiền (COD) không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 451.3798504613873,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 456.0812270615756,
+    "requested": "Có thanh toán bằng thẻ được không?",
+    "cached_from": "Có giao hàng thu tiền (COD) không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 458.4651318783878,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 458.48764711649005,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 459.13209239133624,
+    "requested": "Cho mình hỏi quy định hoàn tiền với",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 461.80407403008905,
+    "requested": "Có thanh toán bằng thẻ được không?",
+    "cached_from": "Có giao hàng thu tiền (COD) không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 462.17905571385046,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 465.9281388407374,
+    "requested": "Có thanh toán bằng thẻ được không?",
+    "cached_from": "Có giao hàng thu tiền (COD) không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 466.97045258398884,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 468.6708590869275,
+    "requested": "Shop nhận những hình thức thanh toán nào?",
+    "cached_from": "Có giao hàng thu tiền (COD) không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 468.9097960801488,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 470.13917686793155,
+    "requested": "Cho mình hỏi quy định hoàn tiền với",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 471.04125242857043,
+    "requested": "Cho mình hỏi quy định hoàn tiền với",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 474.54262317716956,
+    "requested": "Ship trong thành phố mất phí bao nhiêu?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 476.9637641208365,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 483.10945979186624,
+    "requested": "Shop có cho hoàn tiền không?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 484.1566258863137,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 485.44140060498705,
+    "requested": "Điều kiện để được hoàn tiền là gì?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 486.33789096244817,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Hoàn tiền mất mấy ngày?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 489.1470475813305,
+    "requested": "Có thanh toán bằng thẻ được không?",
+    "cached_from": "Có giao hàng thu tiền (COD) không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 495.2817849858001,
+    "requested": "Hoàn tiền mất mấy ngày?",
+    "cached_from": "Chính sách hoàn tiền của shop thế nào?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 495.82001705182495,
+    "requested": "Tiền hoàn về tài khoản trong bao lâu?",
+    "cached_from": "Chính sách hoàn tiền của shop thế nào?",
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "stale": false
+  },
+  {
+    "t": 498.2099037719853,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 510.8880767889616,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 514.537245871366,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 517.8264740403159,
+    "requested": "Thanh toán qua ví điện tử được không?",
+    "cached_from": "Nhận hàng rồi mới trả tiền được không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 518.4525144670927,
+    "requested": "Thanh toán qua ví điện tử được không?",
+    "cached_from": "Nhận hàng rồi mới trả tiền được không?",
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "stale": false
+  },
+  {
+    "t": 525.953322486053,
+    "requested": "Ship trong thành phố mất phí bao nhiêu?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 528.7701202366554,
+    "requested": "Chính sách hoàn tiền của shop thế nào?",
+    "cached_from": "Tiền hoàn về tài khoản trong bao lâu?",
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "stale": false
+  },
+  {
+    "t": 553.1404882186192,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 562.6447767505624,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 566.261177554212,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 569.4323648661788,
+    "requested": "Ship trong thành phố mất phí bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 597.6238105688969,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 599.6040569317731,
+    "requested": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 618.2280371670572,
+    "requested": "Phí ship đi tỉnh bao nhiêu?",
+    "cached_from": "Phí ship nội thành bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 625.8663541731655,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 630.0146622205611,
+    "requested": "Ship trong thành phố mất phí bao nhiêu?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 632.3249439592734,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 637.5228829527939,
+    "requested": "Ship trong thành phố mất phí bao nhiêu?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 641.4574476400318,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 642.2569572597858,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 645.5076459741944,
+    "requested": "Giao nội thành tốn bao nhiêu tiền ship?",
+    "cached_from": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 675.1880536509038,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 680.739330115391,
+    "requested": "Phí ship nội thành bao nhiêu?",
+    "cached_from": "Ship ngoại tỉnh mất bao nhiêu tiền?",
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "stale": false
+  },
+  {
+    "t": 701.1888374451854,
+    "requested": "Giao hàng ra tỉnh tốn bao nhiêu phí?",
+    "cached_from": "Ship trong thành phố mất phí bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  },
+  {
+    "t": 717.510582020745,
+    "requested": "Phí ship đi tỉnh bao nhiêu?",
+    "cached_from": "Ship trong thành phố mất phí bao nhiêu?",
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "stale": false
+  }
+]

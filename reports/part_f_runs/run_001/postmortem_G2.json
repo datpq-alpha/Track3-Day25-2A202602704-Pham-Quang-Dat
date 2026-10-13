@@ -1,0 +1,83 @@
+{
+  "windows": [
+    {
+      "start": 100,
+      "end_exclusive": 120,
+      "attempts": 163,
+      "attempts_per_s": 8.15,
+      "calls_done": 160,
+      "calls_ok": 160,
+      "call_success_ratio": 1.0
+    },
+    {
+      "start": 120,
+      "end_exclusive": 140,
+      "attempts": 581,
+      "attempts_per_s": 29.05,
+      "calls_done": 51,
+      "calls_ok": 51,
+      "call_success_ratio": 1.0
+    },
+    {
+      "start": 150,
+      "end_exclusive": 170,
+      "attempts": 3115,
+      "attempts_per_s": 155.75,
+      "calls_done": 93,
+      "calls_ok": 0,
+      "call_success_ratio": 0.0
+    },
+    {
+      "start": 280,
+      "end_exclusive": 300,
+      "attempts": 3097,
+      "attempts_per_s": 154.85,
+      "calls_done": 83,
+      "calls_ok": 0,
+      "call_success_ratio": 0.0
+    },
+    {
+      "start": 300,
+      "end_exclusive": 320,
+      "attempts": 545,
+      "attempts_per_s": 27.25,
+      "calls_done": 28,
+      "calls_ok": 0,
+      "call_success_ratio": 0.0
+    },
+    {
+      "start": 400,
+      "end_exclusive": 420,
+      "attempts": 1485,
+      "attempts_per_s": 74.25,
+      "calls_done": 77,
+      "calls_ok": 0,
+      "call_success_ratio": 0.0
+    },
+    {
+      "start": 455,
+      "end_exclusive": 485,
+      "attempts": 326,
+      "attempts_per_s": 10.866666666666667,
+      "calls_done": 368,
+      "calls_ok": 352,
+      "call_success_ratio": 0.9565217391304348
+    },
+    {
+      "start": 500,
+      "end_exclusive": 520,
+      "attempts": 180,
+      "attempts_per_s": 9.0,
+      "calls_done": 186,
+      "calls_ok": 186,
+      "call_success_ratio": 1.0
+    }
+  ],
+  "first_call_failure_second": 142,
+  "last_call_failure_second": 468,
+  "naive_failed_turns": 1285,
+  "monthly_assumed_turns": 10368000,
+  "monthly_allowed_bad_turns": 51840.0,
+  "monthly_budget_consumed_by_G2": 0.024787808641975308,
+  "recovery_at": 455
+}

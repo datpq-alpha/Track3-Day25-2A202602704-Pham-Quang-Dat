@@ -1,0 +1,18 @@
+experiment,scenario,seed,pass,availability,latency_p95_s,amplification,retry_ratio,recovery_s,cost_per_good_turn,incompatible_routes,good_turns,turns,give_up_reasons
+reference,G1_rate_limit_spike,25,True,1.0,4.738,1.063,0.002,0.0,2.106,0,2915,2915,{}
+reference,G2_overload_storm,25,True,1.0,8.896,1.046,0.009,0.0,2.133,0,2362,2362,{}
+reference,G3_brownout,25,True,1.0,4.569,1.083,0.049,0.0,2.177,0,1929,1929,{}
+reference,G4_slow_region,25,True,1.0,5.604,1.029,0.004,0.0,2.101,0,2174,2174,{}
+reference,G5_bad_deploy_then_quota,25,True,0.8179,5.477,1.003,0.003,,2.504,0,1855,2268,"{""client_error"": 413}"
+reference,G6_provider_outage,25,True,0.9996,5.982,1.058,0.022,0.0,2.208,0,2384,2385,"{""no_provider_available"": 1}"
+broken_breaker_budget_on,G2_overload_storm,25,True,1.0,15.621,1.4,0.06,0.0,2.391,0,2362,2362,{}
+broken_breaker_budget_on,G3_brownout,25,True,1.0,4.55,1.136,0.068,0.0,2.271,0,1929,1929,{}
+broken_breaker_budget_off,G2_overload_storm,25,False,0.9729,18.527,1.672,0.442,42.0,2.617,0,2298,2362,"{""deadline"": 64}"
+broken_breaker_budget_off,G3_brownout,25,False,1.0,4.661,1.162,0.158,0.0,2.322,0,1929,1929,{}
+working_breaker_budget_on,G2_overload_storm,25,True,1.0,6.191,1.039,0.007,0.0,2.12,0,2362,2362,{}
+working_breaker_budget_on,G3_brownout,25,True,1.0,4.754,1.034,0.02,0.0,2.105,0,1929,1929,{}
+working_breaker_budget_off,G2_overload_storm,25,True,1.0,6.191,1.039,0.007,0.0,2.12,0,2362,2362,{}
+working_breaker_budget_off,G3_brownout,25,True,1.0,4.754,1.034,0.02,0.0,2.105,0,1929,1929,{}
+timeout_30,G4_slow_region,25,True,1.0,5.608,1.014,0.002,0.0,2.082,0,2174,2174,{}
+timeout_30,G6_provider_outage,25,False,0.9484,5.338,1.036,0.015,0.0,2.224,0,2262,2385,"{""deadline"": 106, ""no_provider_available"": 17}"
+without_tool_filter,G6_provider_outage,25,False,0.8948,5.673,1.049,0.006,0.0,2.283,251,2134,2385,"{""incompatible_model_output"": 251}"

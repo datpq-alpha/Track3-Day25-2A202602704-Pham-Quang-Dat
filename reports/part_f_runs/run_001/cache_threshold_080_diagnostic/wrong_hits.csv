@@ -1,0 +1,182 @@
+t,requested,cached_from,requested_intent,cached_intent,stale
+5.338725351404982,Điều kiện để được hoàn tiền là gì?,Tiền hoàn về tài khoản trong bao lâu?,refund_policy,refund_time,False
+7.1439791462238915,Giao hàng ra tỉnh tốn bao nhiêu phí?,Giao nội thành tốn bao nhiêu tiền ship?,shipping_fee_province,shipping_fee_city,False
+7.719765302385228,Chính sách hoàn tiền của shop thế nào?,Tiền hoàn về tài khoản trong bao lâu?,refund_policy,refund_time,False
+10.747722246525377,Giao hàng ra tỉnh tốn bao nhiêu phí?,Giao nội thành tốn bao nhiêu tiền ship?,shipping_fee_province,shipping_fee_city,False
+21.491635009534892,Phí ship đi tỉnh bao nhiêu?,Giao nội thành tốn bao nhiêu tiền ship?,shipping_fee_province,shipping_fee_city,False
+21.547124196396123,Muốn đổi sang size khác thì làm sao?,Mình muốn đổi sang màu khác,exchange_size,exchange_color,False
+21.819277834526872,Shop có ship COD không?,Có thanh toán bằng thẻ được không?,cod,payment_methods,False
+26.85108171188291,Có giao hàng thu tiền (COD) không?,Có thanh toán bằng thẻ được không?,cod,payment_methods,False
+27.704003104612024,Muốn đổi sang size khác thì làm sao?,Mình muốn đổi sang màu khác,exchange_size,exchange_color,False
+28.7821519170142,Phí ship đi tỉnh bao nhiêu?,Giao nội thành tốn bao nhiêu tiền ship?,shipping_fee_province,shipping_fee_city,False
+40.84162175920046,Giao nội thành tốn bao nhiêu tiền ship?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+41.56881984813213,Giao nội thành tốn bao nhiêu tiền ship?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+43.25443419816164,Giao nội thành tốn bao nhiêu tiền ship?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+47.61695608722686,Thanh toán qua ví điện tử được không?,Nhận hàng rồi mới trả tiền được không?,payment_methods,cod,False
+48.78530952719392,Muốn đổi sang size khác thì làm sao?,Mình muốn đổi sang màu khác,exchange_size,exchange_color,False
+54.80476484163971,Ship trong thành phố mất phí bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+57.47248455665039,Muốn đổi sang size khác thì làm sao?,Đổi màu sản phẩm được không?,exchange_size,exchange_color,False
+58.84065465013875,Muốn đổi sang size khác thì làm sao?,Đổi màu sản phẩm được không?,exchange_size,exchange_color,False
+61.414067542530425,Giao nội thành tốn bao nhiêu tiền ship?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+63.3094150770051,Ship trong thành phố mất phí bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+63.930837255186425,Giao nội thành tốn bao nhiêu tiền ship?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+64.14632786231566,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+67.27756259655462,Giao nội thành tốn bao nhiêu tiền ship?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+70.38986796988176,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+72.84583213595673,Đổi size áo thế nào?,Đổi màu sản phẩm được không?,exchange_size,exchange_color,False
+76.54319484804229,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+80.7665017632983,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+85.05976806131822,Đổi size áo thế nào?,Đổi màu sản phẩm được không?,exchange_size,exchange_color,False
+102.00303753248693,Đổi màu sản phẩm được không?,Đổi size áo thế nào?,exchange_color,exchange_size,False
+128.5321008691681,Đổi màu sản phẩm được không?,Muốn đổi sang size khác thì làm sao?,exchange_color,exchange_size,False
+135.85369142514563,Ship ngoại tỉnh mất bao nhiêu tiền?,Ship trong thành phố mất phí bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+150.78875631566754,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+152.25397583095327,Giao hàng ra tỉnh tốn bao nhiêu phí?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+152.70006970663508,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+155.7764981335194,Tiền hoàn về tài khoản trong bao lâu?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+156.05543495626011,Phí ship đi tỉnh bao nhiêu?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+159.78300823257436,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+160.4782847438003,Hoàn tiền mất mấy ngày?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+160.51897363323042,Tiền hoàn về tài khoản trong bao lâu?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+164.9162504486107,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+169.67697173535873,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+171.20465768458686,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+175.2219258452891,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+177.54700770522294,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+177.76640291151975,Tiền hoàn về tài khoản trong bao lâu?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+178.69924055376083,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+179.4464280236388,Giao nội thành tốn bao nhiêu tiền ship?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+179.84784343791807,Tiền hoàn về tài khoản trong bao lâu?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+183.5320443708361,Ship trong thành phố mất phí bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+184.38762263245354,Ship trong thành phố mất phí bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+186.13663610308842,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+187.21781960023716,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+188.0093328065674,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+190.36893950166737,Tiền hoàn về tài khoản trong bao lâu?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+191.3929009669505,Giao nội thành tốn bao nhiêu tiền ship?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+200.8459652033256,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+201.06053583692963,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+203.30062482927758,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+204.68069586891383,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+205.26916609362385,Giao nội thành tốn bao nhiêu tiền ship?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+209.71300350256422,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+210.6137606835977,Tiền hoàn về tài khoản trong bao lâu?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+211.0766993964277,Hoàn tiền mất mấy ngày?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+212.8668595466638,Tiền hoàn về tài khoản trong bao lâu?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+215.61219270719405,Giao hàng ra tỉnh tốn bao nhiêu phí?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+216.1184632315044,Phí ship đi tỉnh bao nhiêu?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+216.5480501733368,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+218.5218108633333,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+223.14068994761874,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+227.6513906051327,Giao hàng ra tỉnh tốn bao nhiêu phí?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+228.41775439704844,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+232.31127817057478,Phí ship đi tỉnh bao nhiêu?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+235.5251376177132,Điều kiện để được hoàn tiền là gì?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+238.45713562806944,Giao hàng ra tỉnh tốn bao nhiêu phí?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+238.85821081409952,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+239.919522519842,Cho mình hỏi quy định hoàn tiền với,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+244.23583672515912,Giao hàng ra tỉnh tốn bao nhiêu phí?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,True
+244.81432367472254,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,True
+252.00943871950403,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+253.9607145587206,Điều kiện để được hoàn tiền là gì?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+261.9944916983721,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,True
+266.4999624979881,Điều kiện để được hoàn tiền là gì?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+267.3240640117458,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+268.93785663144934,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,True
+269.6362211468261,Giao hàng ra tỉnh tốn bao nhiêu phí?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,True
+270.55760542142184,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+276.29058631752724,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+276.29630486443784,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+276.47668322789303,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,True
+278.3573014672218,Cho mình hỏi quy định hoàn tiền với,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+278.51654572643184,Giao hàng ra tỉnh tốn bao nhiêu phí?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,True
+285.7594342924835,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+291.00925447128725,Phí ship đi tỉnh bao nhiêu?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,True
+292.1266439537762,Điều kiện để được hoàn tiền là gì?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+293.7399112301369,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+293.9125548320636,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,True
+297.93859599049273,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+298.1926868215025,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+301.3100961557907,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+305.72984543987855,Cho mình hỏi quy định hoàn tiền với,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+310.139481226161,Cho mình hỏi quy định hoàn tiền với,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+326.00821800539075,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+326.0996154836111,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+336.1057071972552,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+340.51110909186457,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+343.3489024782681,Điều kiện để được hoàn tiền là gì?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+343.3887384160307,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+345.8467269603524,Điều kiện để được hoàn tiền là gì?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+349.024501187116,Giao hàng ra tỉnh tốn bao nhiêu phí?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,True
+350.3554424079635,Cho mình hỏi quy định hoàn tiền với,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+357.086245126429,Cho mình hỏi quy định hoàn tiền với,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+359.1357887532301,Cho mình hỏi quy định hoàn tiền với,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+361.3527214305849,Điều kiện để được hoàn tiền là gì?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,True
+372.0112718762987,Chính sách hoàn tiền của shop thế nào?,Tiền hoàn về tài khoản trong bao lâu?,refund_policy,refund_time,False
+372.07266983409164,Ship ngoại tỉnh mất bao nhiêu tiền?,Ship trong thành phố mất phí bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+372.42438419340937,Chính sách hoàn tiền của shop thế nào?,Tiền hoàn về tài khoản trong bao lâu?,refund_policy,refund_time,False
+373.7025464276583,Điều kiện để được hoàn tiền là gì?,Tiền hoàn về tài khoản trong bao lâu?,refund_policy,refund_time,False
+380.9693925314905,Ship ngoại tỉnh mất bao nhiêu tiền?,Ship trong thành phố mất phí bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+383.34450832486004,Ship ngoại tỉnh mất bao nhiêu tiền?,Ship trong thành phố mất phí bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+385.9885451573884,Giao hàng ra tỉnh tốn bao nhiêu phí?,Ship trong thành phố mất phí bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+396.0603376623916,Ship ngoại tỉnh mất bao nhiêu tiền?,Ship trong thành phố mất phí bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+406.7811298016307,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+413.2905372248603,Phí ship đi tỉnh bao nhiêu?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+425.5520969923564,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+426.49285176628683,Hoàn tiền mất mấy ngày?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+426.75308158596306,Shop nhận những hình thức thanh toán nào?,Có giao hàng thu tiền (COD) không?,payment_methods,cod,False
+428.08734646723457,Đổi màu sản phẩm được không?,Mặc không vừa thì đổi size được không?,exchange_color,exchange_size,False
+432.22692304514527,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+433.5971724339196,Hoàn tiền mất mấy ngày?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+440.91746852750737,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+445.0405673806027,Bao lâu thì nhận được tiền hoàn?,Điều kiện để được hoàn tiền là gì?,refund_time,refund_policy,False
+446.6599142375178,Shop nhận những hình thức thanh toán nào?,Có giao hàng thu tiền (COD) không?,payment_methods,cod,False
+448.8576285542379,Phí ship đi tỉnh bao nhiêu?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+450.4915310986124,Có thanh toán bằng thẻ được không?,Có giao hàng thu tiền (COD) không?,payment_methods,cod,False
+451.3798504613873,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+456.0812270615756,Có thanh toán bằng thẻ được không?,Có giao hàng thu tiền (COD) không?,payment_methods,cod,False
+458.4651318783878,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+458.48764711649005,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+459.13209239133624,Cho mình hỏi quy định hoàn tiền với,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+461.80407403008905,Có thanh toán bằng thẻ được không?,Có giao hàng thu tiền (COD) không?,payment_methods,cod,False
+462.17905571385046,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+465.9281388407374,Có thanh toán bằng thẻ được không?,Có giao hàng thu tiền (COD) không?,payment_methods,cod,False
+466.97045258398884,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+468.6708590869275,Shop nhận những hình thức thanh toán nào?,Có giao hàng thu tiền (COD) không?,payment_methods,cod,False
+468.9097960801488,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+470.13917686793155,Cho mình hỏi quy định hoàn tiền với,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+471.04125242857043,Cho mình hỏi quy định hoàn tiền với,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+474.54262317716956,Ship trong thành phố mất phí bao nhiêu?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+476.9637641208365,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+483.10945979186624,Shop có cho hoàn tiền không?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+484.1566258863137,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+485.44140060498705,Điều kiện để được hoàn tiền là gì?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+486.33789096244817,Chính sách hoàn tiền của shop thế nào?,Hoàn tiền mất mấy ngày?,refund_policy,refund_time,False
+489.1470475813305,Có thanh toán bằng thẻ được không?,Có giao hàng thu tiền (COD) không?,payment_methods,cod,False
+495.2817849858001,Hoàn tiền mất mấy ngày?,Chính sách hoàn tiền của shop thế nào?,refund_time,refund_policy,False
+495.82001705182495,Tiền hoàn về tài khoản trong bao lâu?,Chính sách hoàn tiền của shop thế nào?,refund_time,refund_policy,False
+498.2099037719853,Giao nội thành tốn bao nhiêu tiền ship?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+510.8880767889616,Phí ship nội thành bao nhiêu?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+514.537245871366,Phí ship nội thành bao nhiêu?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+517.8264740403159,Thanh toán qua ví điện tử được không?,Nhận hàng rồi mới trả tiền được không?,payment_methods,cod,False
+518.4525144670927,Thanh toán qua ví điện tử được không?,Nhận hàng rồi mới trả tiền được không?,payment_methods,cod,False
+525.953322486053,Ship trong thành phố mất phí bao nhiêu?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+528.7701202366554,Chính sách hoàn tiền của shop thế nào?,Tiền hoàn về tài khoản trong bao lâu?,refund_policy,refund_time,False
+553.1404882186192,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+562.6447767505624,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+566.261177554212,Giao nội thành tốn bao nhiêu tiền ship?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+569.4323648661788,Ship trong thành phố mất phí bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+597.6238105688969,Giao hàng ra tỉnh tốn bao nhiêu phí?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+599.6040569317731,Ship ngoại tỉnh mất bao nhiêu tiền?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+618.2280371670572,Phí ship đi tỉnh bao nhiêu?,Phí ship nội thành bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+625.8663541731655,Giao nội thành tốn bao nhiêu tiền ship?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+630.0146622205611,Ship trong thành phố mất phí bao nhiêu?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+632.3249439592734,Phí ship nội thành bao nhiêu?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+637.5228829527939,Ship trong thành phố mất phí bao nhiêu?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+641.4574476400318,Giao nội thành tốn bao nhiêu tiền ship?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+642.2569572597858,Phí ship nội thành bao nhiêu?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+645.5076459741944,Giao nội thành tốn bao nhiêu tiền ship?,Giao hàng ra tỉnh tốn bao nhiêu phí?,shipping_fee_city,shipping_fee_province,False
+675.1880536509038,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+680.739330115391,Phí ship nội thành bao nhiêu?,Ship ngoại tỉnh mất bao nhiêu tiền?,shipping_fee_city,shipping_fee_province,False
+701.1888374451854,Giao hàng ra tỉnh tốn bao nhiêu phí?,Ship trong thành phố mất phí bao nhiêu?,shipping_fee_province,shipping_fee_city,False
+717.510582020745,Phí ship đi tỉnh bao nhiêu?,Ship trong thành phố mất phí bao nhiêu?,shipping_fee_province,shipping_fee_city,False

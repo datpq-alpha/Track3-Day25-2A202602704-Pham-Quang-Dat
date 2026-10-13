@@ -1,0 +1,44 @@
+{
+  "seed": 25,
+  "metrics": {
+    "scenario": "G2_overload_storm",
+    "client": "resilient",
+    "turns": 2362,
+    "good_turns": 2362,
+    "availability": 1.0,
+    "latency_p50_s": 3.015,
+    "latency_p95_s": 8.896,
+    "latency_p99_s": 15.137,
+    "calls": 4724,
+    "attempts": 4941,
+    "amplification": 1.046,
+    "retry_ratio": 0.009,
+    "attempts_by_provider": {
+      "alpha": 3440,
+      "alpha-eu": 1103,
+      "beta": 389,
+      "gamma-mini": 9
+    },
+    "errors_by_code": {
+      "api_error": 14,
+      "client_timeout": 154,
+      "rate_limit_exceeded": 49
+    },
+    "give_up_reasons": {},
+    "cost": 5039.2,
+    "cost_per_good_turn": 2.133,
+    "retry_after_violations": 0,
+    "client_error_retries": 0,
+    "incompatible_routes": 0,
+    "unneeded_failovers": 0,
+    "recovery_s": 0.0,
+    "primary_share_after_restore": 1.0
+  },
+  "checks": {
+    "availability_min": true,
+    "amplification_max": true,
+    "recovery_s_max": true,
+    "primary_share_after_restore_min": true
+  },
+  "pass": true
+}

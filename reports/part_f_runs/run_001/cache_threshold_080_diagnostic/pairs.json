@@ -1,0 +1,42 @@
+[
+  {
+    "requested_intent": "refund_policy",
+    "cached_intent": "refund_time",
+    "count": 50
+  },
+  {
+    "requested_intent": "shipping_fee_province",
+    "cached_intent": "shipping_fee_city",
+    "count": 43
+  },
+  {
+    "requested_intent": "shipping_fee_city",
+    "cached_intent": "shipping_fee_province",
+    "count": 38
+  },
+  {
+    "requested_intent": "refund_time",
+    "cached_intent": "refund_policy",
+    "count": 27
+  },
+  {
+    "requested_intent": "payment_methods",
+    "cached_intent": "cod",
+    "count": 11
+  },
+  {
+    "requested_intent": "exchange_size",
+    "cached_intent": "exchange_color",
+    "count": 7
+  },
+  {
+    "requested_intent": "exchange_color",
+    "cached_intent": "exchange_size",
+    "count": 3
+  },
+  {
+    "requested_intent": "cod",
+    "cached_intent": "payment_methods",
+    "count": 2
+  }
+]

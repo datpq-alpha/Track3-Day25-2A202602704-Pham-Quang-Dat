@@ -1,0 +1,2 @@
+# Keep frozen source and result checksums stable across Windows checkouts.
+* -text whitespace=cr-at-eol

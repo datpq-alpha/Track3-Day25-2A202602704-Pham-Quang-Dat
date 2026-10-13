@@ -28,7 +28,7 @@ fallback_order: [alpha, alpha-eu, beta, gamma-mini]
 # YOUR client settings (read by ResilientClient). Tune them, explain them.
 # ----------------------------------------------------------------------------
 client:
-  attempt_timeout_s: 8.0
+  attempt_timeout_s: 6.0           # quicker fallback; still above the 5 s slow-call threshold
   max_attempts_per_provider: 2      # 1 retry on the same provider, then fail over
   min_time_left_s: 1.0              # don't start an attempt that cannot finish
   backoff_base_s: 0.25

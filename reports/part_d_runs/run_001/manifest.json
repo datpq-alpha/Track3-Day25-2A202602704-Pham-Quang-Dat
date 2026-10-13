@@ -1,0 +1,22 @@
+{
+  "sessions_per_seed": 500,
+  "seeds": [
+    25,
+    26,
+    27
+  ],
+  "max_attempts_per_step": 5,
+  "fault_profile": {
+    "error_before": 0.05,
+    "timeout_after_commit": 0.1,
+    "crash_after_commit": 0.04
+  },
+  "source_sha256": {
+    "src/gameday_lab/workflows/executor.py": "5743fdb0c4674fe8eab3ef58626ebd6f3e2933f1616eedf2aca8c8caf3328545",
+    "src/gameday_lab/workflows/runner.py": "7b806b6d0c9b7f0328ad71e56ebb46c214026ae45f153357fe61ee0b5bfb18b2",
+    "src/gameday_lab/workflows/services.py": "6f37ff5fdc13f5a1882821b86c7b7362063a0db499909aff704ec84b91eea879",
+    "src/gameday_lab/workflows/naive_executor.py": "b59784cccf85f09c210d18c9746453fb8a0ec9c28ece64c62be66c11a6e1c453",
+    "scripts/run_workflows.py": "d16c45e98d7bc64510f713dfb85243d9dd32b0822a63d945fdb67e4880c97ad9"
+  },
+  "unit_tests_passed": 7
+}

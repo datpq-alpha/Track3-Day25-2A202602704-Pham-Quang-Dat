@@ -1,0 +1,28 @@
+{
+  "status": "selected",
+  "selected_experiment": "chosen",
+  "seeds": [
+    25,
+    26,
+    27
+  ],
+  "client_seed": 1,
+  "cache_settings": {
+    "similarity_threshold": 0.9,
+    "ttl_s": 30.0,
+    "max_stale_s": 300.0,
+    "max_entries": 500
+  },
+  "verification": {
+    "relevant_tests_passed": 83,
+    "public_C1_seeds_passed": 3,
+    "ruff": "pass"
+  },
+  "sha256": {
+    "selected_config.yaml": "869fff1c5920a681ca6c64482f0fbc5d332e36795ae5fa557ed6b9015e870ef7",
+    "input_config.yaml": "ccbd5833a832eac8ca9cdffc67fcf285275ad2babe7d91fe93b055b12cf6633c",
+    "summary.json": "ac524acc98a5c73bd182d6a27c464c1fbfd774676ef5180fe0b6aa55d9ef9a9d",
+    "manifest.json": "f860a1145397a5c007ce1f6d93bdfa40046c453e4418c46cc611d6059b8c0510"
+  },
+  "notes": "Raw experiment files are preserved. Later iterations must use a new output directory."
+}

@@ -53,7 +53,7 @@ client:
 # wrong_answers_by_reason, tune each value and justify it in report section 8.
 # ----------------------------------------------------------------------------
 cache:
-  similarity_threshold: 0.80
-  ttl_s: 600
-  max_stale_s: 0
+  similarity_threshold: 0.90   # reject nearby but different FAQ intents
+  ttl_s: 30                   # bound unannounced changes while providers are healthy
+  max_stale_s: 300             # outage fallback only; webhook/prompt scope still apply
   max_entries: 500

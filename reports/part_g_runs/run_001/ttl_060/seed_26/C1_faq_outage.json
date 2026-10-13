@@ -1,0 +1,52 @@
+{
+  "seed": 26,
+  "metrics": {
+    "scenario": "C1_faq_outage",
+    "client": "cached",
+    "turns": 2912,
+    "good_turns": 2631,
+    "availability": 0.9035,
+    "latency_p50_s": 1.031,
+    "latency_p95_s": 3.552,
+    "latency_p99_s": 4.362,
+    "calls": 3905,
+    "attempts": 2603,
+    "amplification": 0.667,
+    "retry_ratio": 0.007,
+    "attempts_by_provider": {
+      "alpha": 2515,
+      "alpha-eu": 28,
+      "beta": 27,
+      "gamma-mini": 33
+    },
+    "errors_by_code": {
+      "api_error": 7,
+      "service_unavailable": 98
+    },
+    "give_up_reasons": {
+      "no_provider_available": 281
+    },
+    "cost": 2495.4,
+    "cost_per_good_turn": 0.948,
+    "retry_after_violations": 0,
+    "client_error_retries": 0,
+    "incompatible_routes": 0,
+    "unneeded_failovers": 0,
+    "recovery_s": 0.0,
+    "primary_share_after_restore": 1.0,
+    "faq_turns": 1716,
+    "faq_availability": 0.9563,
+    "cache_hit_ratio": 0.656,
+    "stale_served": 168,
+    "wrong_answers": 0,
+    "wrong_answers_by_reason": {},
+    "outdated_answers": 2
+  },
+  "checks": {
+    "wrong_answers_max": true,
+    "outdated_answers_max": true,
+    "faq_availability_min": true,
+    "cache_hit_ratio_min": true
+  },
+  "pass": true
+}

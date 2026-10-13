@@ -1,0 +1,151 @@
+{
+  "created_at": "2026-10-13T11:30:12.298852+07:00",
+  "timezone": "Asia/Saigon",
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "command": [
+    "scripts/run_cache_experiments.py",
+    "--similarity-threshold",
+    "0.9",
+    "--ttl-s",
+    "30",
+    "--max-stale-s",
+    "300"
+  ],
+  "seeds": [
+    25,
+    26,
+    27
+  ],
+  "client_seed": 1,
+  "client_settings": {
+    "attempt_timeout_s": 6.0,
+    "max_attempts_per_provider": 2,
+    "min_time_left_s": 1.0,
+    "backoff_base_s": 0.25,
+    "backoff_cap_s": 4.0,
+    "retry_budget_ratio": 0.1,
+    "retry_budget_min_per_s": 0.5,
+    "retry_budget_max_tokens": 20,
+    "quota_cooldown_s": 300,
+    "breaker": {
+      "window_size": 20,
+      "min_calls": 10,
+      "failure_rate_threshold": 0.5,
+      "slow_call_s": 5.0,
+      "slow_rate_threshold": 0.6,
+      "open_duration_s": 10.0,
+      "half_open_max_probes": 2,
+      "half_open_successes": 2
+    }
+  },
+  "chosen_cache_settings": {
+    "similarity_threshold": 0.9,
+    "ttl_s": 30.0,
+    "max_stale_s": 300.0,
+    "max_entries": 500
+  },
+  "source_sha256": {
+    "src/gameday_lab/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/gameday_lab/breaker.py": "c2f09031eb817b233d52b3b74e8b18eabd3dea924e8453fe76f269665648aaa6",
+    "src/gameday_lab/cache.py": "b732d069ff678794a74e0d110a3c8bfd2ea784ea0a5130408c8b2124fcec8bde",
+    "src/gameday_lab/client.py": "5de014db4e96593029d9f74b28df2886fbef9df956f65f76a58eff07a29291bb",
+    "src/gameday_lab/errors.py": "0976933a64a49728703ef385fa9190699c8e5a8399c7eb156e9bbffbcc9d663f",
+    "src/gameday_lab/factory.py": "276813330a046829ce0d5b37b89a5e131a295d0c7cf37b8eda4eed0cd9e47132",
+    "src/gameday_lab/naive_client.py": "5f33d344fc03ee262106e49bab7e1222d8d70cda5939253b7bac761decfcd085",
+    "src/gameday_lab/retry.py": "1dd98deb03a3a1bcd01415c8585045547d162c283f205c8568e32652ce7c3c6f",
+    "src/gameday_lab/sim/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/gameday_lab/sim/config.py": "34d9485e0dfd0b73971bcc62f4e47f5c2dbb205f8426e9d95d70fd2cec165d30",
+    "src/gameday_lab/sim/contracts.py": "7375a1a9507cd0ae62fc793ffb236e0944ab2d77b4d88c4f87ef1a23fd5404a2",
+    "src/gameday_lab/sim/engine.py": "5740e2d3e4a91a5ec17263b0f4c7cc11ee910c9a53bd71939b99c6191fde6b60",
+    "src/gameday_lab/sim/faq.py": "c2ed1e55515dc8a4e23fe63f12a56cfcd285037ee0c4d7669038b90e9d79d9b9",
+    "src/gameday_lab/sim/providers.py": "06b5ba6d478f8b1c214a3d3dee7ddba90d77ce7abe480594db5ebc47b609c622",
+    "src/gameday_lab/slo/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/gameday_lab/slo/alerting.py": "0d9bff178170aed0cbb1e0b3af18c0251d47e9923c66c82f5047fa9292c76ddb",
+    "src/gameday_lab/slo/data.py": "eebd8e67fa4be6daa0478766298db91c9ad169b02533b8272d366075b8ab7ddf",
+    "src/gameday_lab/slo/scoring.py": "6b71ab749986434f820061ac05ef707434b826245f03b0268e87f781d692bbe2",
+    "src/gameday_lab/workflows/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/gameday_lab/workflows/executor.py": "b7abd36ac912f7f018c2fd8b0f1cc36f26ef6f2d5671533b95651a4a23a07113",
+    "src/gameday_lab/workflows/naive_executor.py": "b59784cccf85f09c210d18c9746453fb8a0ec9c28ece64c62be66c11a6e1c453",
+    "src/gameday_lab/workflows/runner.py": "7b806b6d0c9b7f0328ad71e56ebb46c214026ae45f153357fe61ee0b5bfb18b2",
+    "src/gameday_lab/workflows/services.py": "6f37ff5fdc13f5a1882821b86c7b7362063a0db499909aff704ec84b91eea879",
+    "scripts/run_cache_experiments.py": "e5c48643b8e9d1948c65c69096c8d3b7c62b592c35c34d52dc7c129139e82e5b"
+  },
+  "input_sha256": {
+    "input_config.yaml": "ccbd5833a832eac8ca9cdffc67fcf285275ad2babe7d91fe93b055b12cf6633c",
+    "scenarios_cache.yaml": "d0cd1315f01b52df7ee9fce8db486673394d3f45dcb37d4b5beb5b813c3b55c3",
+    "reference_config.yaml": "ccbd5833a832eac8ca9cdffc67fcf285275ad2babe7d91fe93b055b12cf6633c"
+  },
+  "experiments": {
+    "no_cache": {
+      "client": "resilient",
+      "cache": null
+    },
+    "reference_cache": {
+      "client": "cached",
+      "cache": {
+        "similarity_threshold": 0.8,
+        "ttl_s": 600,
+        "max_stale_s": 0,
+        "max_entries": 500
+      }
+    },
+    "chosen": {
+      "client": "cached",
+      "cache": {
+        "similarity_threshold": 0.9,
+        "ttl_s": 30.0,
+        "max_stale_s": 300.0,
+        "max_entries": 500
+      }
+    },
+    "threshold_080": {
+      "client": "cached",
+      "cache": {
+        "similarity_threshold": 0.8,
+        "ttl_s": 30.0,
+        "max_stale_s": 300.0,
+        "max_entries": 500
+      }
+    },
+    "threshold_097": {
+      "client": "cached",
+      "cache": {
+        "similarity_threshold": 0.97,
+        "ttl_s": 30.0,
+        "max_stale_s": 300.0,
+        "max_entries": 500
+      }
+    },
+    "ttl_030": {
+      "alias_of": "chosen"
+    },
+    "ttl_060": {
+      "client": "cached",
+      "cache": {
+        "similarity_threshold": 0.9,
+        "ttl_s": 60.0,
+        "max_stale_s": 300.0,
+        "max_entries": 500
+      }
+    },
+    "ttl_300": {
+      "client": "cached",
+      "cache": {
+        "similarity_threshold": 0.9,
+        "ttl_s": 300.0,
+        "max_stale_s": 300.0,
+        "max_entries": 500
+      }
+    },
+    "no_stale": {
+      "client": "cached",
+      "cache": {
+        "similarity_threshold": 0.9,
+        "ttl_s": 30.0,
+        "max_stale_s": 0.0,
+        "max_entries": 500
+      }
+    }
+  },
+  "chosen_passed": true
+}

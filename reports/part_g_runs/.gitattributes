@@ -1,0 +1,2 @@
+# Preserve snapshot bytes so recorded SHA-256 checksums survive checkout.
+* -text whitespace=cr-at-eol
